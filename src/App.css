@@ -1,7 +1,120 @@
+*{
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
+  display: flex;
+  background-color: #282c34;
+  color: white;
+  position: absolute;
+  top: 0;bottom: 0;right: 0;left: 0;
 }
-
+.sidemenu{
+  width: 300px;
+  border: 1px solid white;
+  background-color: black;
+}
+.side-menu-button{
+  margin: 0 auto;
+  width: 70%;
+  padding: 10px;
+  border-radius: 0.5rem;
+  background-color: whitesmoke;
+  color: black;
+  font-weight: bold;
+}
+.side-menu-button:hover{
+  margin: 0 auto;
+  width: 70%;
+  padding: 10px;
+  border-radius: 0.5rem;
+  background-color: rgba(245, 245, 245, 0.811);
+  color: black;
+  font-weight: bold;
+}
+.side-menu-button span{
+  padding-right: 2px;
+}
+.side-heading{
+  width: 80%;
+  text-align: left; 
+  margin: 40px;
+  font-style: italic;
+  color: gray;
+}
+.side-menu-bar{
+  font-style: normal;
+  margin-top: 10px;
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 0.5rem;
+}
+.side-menu-bar:hover{
+  font-style: normal;
+  margin-top: 10px;
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 0.5rem;
+  background-color: #201e1ef6;
+}
+.chatbox{
+  flex:1;
+  border: 1px solid white;
+  position: relative;
+}
+.chat-input{
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.chat-input-textarea{
+  width: 80%;
+  height: 4vw;
+  background-color: #282c34;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  color: rgb(255, 255, 255);
+  padding:10px;
+  font-weight:lighter;
+  font-size: 1.2rem;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+}
+.chat-log{
+  padding: 30px;
+  text-align: left;
+  /* display: flex; */
+}
+.chat-message{
+  display: flex;
+  padding: 20px;
+  max-width: 680px;
+}
+.chat-message.chatgpt{  
+  background-color:  #353638;
+  display: flex;
+  padding: 20px;
+  max-width: 680px;
+}
+.avatar{
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.avatar.chatgpt{
+  background-color: #0da37f;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.message{
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
